@@ -36,7 +36,7 @@ function calcularEcuacionCuadratica(a, b, c) {
     return { x1, x2, textoExplicacion };
 }
 
-/* lo incorporé para evitar que la página se recargue */
+/* lo incorporé para evitar que la página se recargue completa */
 document.getElementById('formulario-cuadratica').onsubmit = function(evento) {
     evento.preventDefault();
 
@@ -49,7 +49,7 @@ document.getElementById('formulario-cuadratica').onsubmit = function(evento) {
     /* llama a la función */
     const resultados = calcularEcuacionCuadratica(a, b, c);
 
-    /* para entregar los resultados */
+    /* se incorpora para entregar los resultados */
     document.getElementById('resultado-x1').textContent = `Valor de x1: ${resultados.x1}`;
     document.getElementById('resultado-x2').textContent = `Valor de x2: ${resultados.x2}`;
     document.getElementById('explicacion').textContent = resultados.textoExplicacion;
