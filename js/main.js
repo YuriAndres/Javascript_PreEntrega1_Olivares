@@ -46,7 +46,7 @@ document.getElementById('formulario-cuadratica').onsubmit = function(evento) {
     const b = parseFloat(document.getElementById('valor-b').value);
     const c = parseFloat(document.getElementById('valor-c').value);
 
-    /* llama a la función con los parámetros entregados */
+    /* llama a la función con los parámetros entregados por el usuario */
     const resultados = calcularEcuacionCuadratica(a, b, c);
 
     /* se incorpora para entregar los resultados */
